@@ -1,0 +1,192 @@
+@charset "utf-8";
+
+/*웹폰트연결*/
+@font-face {
+    font-family: 'GmarketSansBold';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansBold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'GmarketSansMedium';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+ul{
+    list-style: none;
+    color: inherit;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+.clearfix::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+body{
+    font-size: 17px;
+    line-height: 25px;
+    font-family: "GmarketSansMedium";
+    color: #000;   
+    min-width: 1500px; 
+}
+img, video{
+    vertical-align: middle;
+}
+
+/*header*/
+#header{
+    width: 100%;
+    position: fixed;
+    background-color: #fff;
+    top: 0;
+    left: 0;
+}
+#header_inner{
+    width: 1300px;
+    margin: 0 auto;
+    position: relative;
+}
+#header .logo a{
+    position: absolute;
+    top:5px;
+    left:50%;
+    transform:translateX(-50%);
+    display: block;
+    width: 250px;
+    height: 80px;
+    background-image: url(img/logo.png);
+    background-repeat: no-repeat;
+}
+#header .left{
+    float: left;
+}
+#header .login, .right{
+    float: right;
+}
+#header ul li{
+    float: left;
+    padding: 30px 20px;
+    color: #000;
+    font-size: 18px;
+}
+#header .login1{
+    display: block;
+    background-image: url(img/black_1.png);
+    width: 30px;
+    height: 30px;
+}
+#header .login2{
+    display: block;
+    background-image: url(img/black_2.png);
+    width: 30px;
+    height: 30px;
+}
+#header .login3{
+    display: block;
+    background-image: url(img/black_3.png);
+    width: 30px;
+    height: 30px;
+}
+#header .login li{
+    padding:0 10px;
+    padding-top: 25px;
+}
+
+/*mb*/
+#mb{
+    margin-top: 90px;
+    width: 100%;
+    overflow: hidden;
+}
+
+/*box*/
+#container{
+    width: 1300px;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 80px;
+}
+.tabs{
+    padding-bottom: 80px;
+    display: flex;
+    justify-content: center;
+}
+.tabs li {
+    padding: 10px 0px;
+    font-size: 20px;
+    border: 1px solid #000;
+    width: 120px;
+}
+.tabs li.active{
+    font-weight: bold;
+    color:#fff;
+    background-color: #000;
+}
+.tab_content ul li{
+    float: left;
+    width: 33.3%;
+    padding: 35px 0;
+}
+.tab_content ul li h3{
+    padding: 10px 0;
+    padding-bottom: 30px;
+}
+.tab_content ul li img:hover{
+    transform: translateY(-10px);
+    transition: all 0.3s;
+}
+.btn{
+    padding: 12px 60px;
+    border: 1px solid #000;
+    border-radius: 30px;
+    font-size: 14px;
+    background-image: url(img/store_btn.jpg);
+    background-repeat: no-repeat;
+    background-position: 190px ;
+}
+.btn:hover{
+    background-image: url(img/store_hover.jpg);
+    font-weight: bold;
+}
+
+
+
+/*footer*/
+#footer{
+    border-top: 1px solid #000;
+    margin-top: 150px;
+}
+#footer_inner{
+    width: 1300px;
+    margin: 0 auto;
+    padding-top: 50px;
+}
+.ft_left{
+    float: left;
+}
+#footer_inner ul{
+    float: left;
+    padding-top: 10px;
+}
+#footer_inner ul li{
+    padding-right: 50px;
+}
+#footer_inner p{
+    padding-bottom: 15px;
+}
+.ft_right{
+    float: right;
+    padding-top: 85px;
+}
+.ft_right h2{
+    padding: 15px 0;
+}

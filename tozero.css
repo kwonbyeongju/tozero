@@ -1,0 +1,339 @@
+@charset "utf-8";
+
+/*웹폰트연결*/
+@font-face {
+    font-family: 'GmarketSansBold';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansBold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'GmarketSansMedium';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+ul{
+    list-style: none;
+    color: inherit;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+.clearfix::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+body{
+    font-size: 15px;
+    line-height: 25px;
+    font-family: "GmarketSansMedium";
+    color: #000;   
+    min-width: 1500px; 
+}
+img, video{
+    vertical-align: middle;
+}
+
+/*header*/
+#header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10;
+}
+#header_inner{
+    width: 1300px;
+    margin: 0 auto;
+    position: relative;
+}
+#header .logo a{
+    position: absolute;
+    top:5px;
+    left:50%;
+    transform:translateX(-50%);
+    display: block;
+    width: 250px;
+    height: 80px;
+    background-image: url(img/logo_white.png);
+    background-repeat: no-repeat;
+}
+#header .left{
+    float: left;
+}
+#header .login, .right{
+    float: right;
+}
+#header ul li{
+    float: left;
+    padding: 30px 20px;
+    color: #fff;
+    font-size: 18px;
+}
+#header .login1{
+    display: block;
+    background-image: url(img/login_1.png);
+    width: 30px;
+    height: 30px;
+}
+#header .login2{
+    display: block;
+    background-image: url(img/login_2.png);
+    width: 30px;
+    height: 30px;
+}
+#header .login3{
+    display: block;
+    background-image: url(img/login_3.png);
+    width: 30px;
+    height: 30px;
+}
+#header .login li{
+    padding:0 10px;
+    padding-top: 25px;
+}
+
+/*스크롤 시 변화*/
+div#header.on{
+	position: fixed;
+    z-index: 10;
+    background-color: #fff;
+}
+div#header.on a{
+    color: #000;
+}
+div#header.on .logo a{
+    background-image: url(img/logo.png);
+}
+div#header.on .login1{
+    background-image: url(img/black_1.png);
+}
+div#header.on .login2{
+    background-image: url(img/black_2.png);
+}
+
+div#header.on .login3{
+    background-image: url(img/black_3.png);
+}
+div#header.on ul li a:hover{
+    font-weight: bold;
+}
+
+/*video*/
+#video{
+    height: 970px;
+    overflow: hidden;
+}
+video{
+    width: 100%;
+}
+
+/*brand*/
+#brand{
+    width: 1300px;
+    margin: 0 auto;
+    padding: 180px 0;
+}
+.text{
+    float: left;
+    text-align: center;
+    padding-top: 250px;
+    padding-left: 80px;
+}   
+.img{
+    float: left;
+}
+.text h1{
+    border: 1px solid #000;
+    padding: 10px 50px;
+    display: inline-block;
+}
+.text p{
+    padding-top: 30px;
+    font-size: 20px;
+}
+.zero{
+    padding: 50px;
+}
+.btn1{
+    border: 1px solid green;
+    padding: 10px 15px;
+    color: green;
+}
+
+/*best*/
+#best{
+    width: 1300px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 100px 0;
+}
+.title{
+    font-size: 40px;
+    line-height: 100%;
+}
+.sub_title{
+    padding: 10px 0;
+    padding-bottom: 50px;
+}
+.swiper-slide h4{
+    padding-top: 20px;
+}
+.swiper-slide span{
+    font-style: italic;
+}
+.swiper-slide h3{
+    padding-top: 10px;
+}
+
+/*swiper*/
+/*화살표 밖으로 + 이미지로 화살표 변환*/
+#arrow_image{width:1300px; margin:0 auto;
+    position:relative;}
+.card4_img{width:1100px; margin:0 auto;}
+.card4_img_next{right:0;}
+.card4_img_prev{left:0;}
+
+/*화살표를 이미지로 변경*/
+.card4_img_next:after{content:url(img/arrow2.png);}
+.card4_img_prev:after{content:url(img/arrow1.png);}
+.card4_img_next, .card4_img_prev{width:50px; height:50px;}
+
+/*campaign*/
+#campaign{
+    width: 1370px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 150px 0;
+}
+.box1{
+    background-color: #0e9048;
+    width: 1300px;
+    padding: 35px;
+    margin: 50px 0;
+}
+.cp_img{
+    float: left;
+}
+.cp_text{
+    float: left;
+    color: #fff;
+    padding-top: 120px;
+    padding-left: 50px;
+    box-sizing: border-box;
+}
+#campaign h1{
+    font-size: 40px;
+}
+#campaign p{
+    padding: 20px 0;
+    font-size: 17px;
+}
+.btn2{
+    border: 1px solid #fff;
+    padding: 8px 20px;
+}
+.box2{
+    background-color: #715342;
+    width: 1300px;
+    padding: 35px;
+}
+.cp_text2{
+    float: left;
+    color: #fff;
+    box-sizing: border-box;
+    padding-left: 100px;
+    padding-top: 120px;
+}
+.cp_img2{
+    float: right;
+}
+
+/*mark*/
+#mark{
+    background-color: #eee;
+    margin-bottom: 150px;
+}
+#mark_inner{
+    width: 1300px;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+#mark_inner ul{
+    display: flex;
+}
+#mark_inner ul li{
+    width: 20%;
+    text-align: center;
+}
+#mark_inner ul img{
+    padding-top: 30px;
+    padding-bottom: 10px;
+}
+
+/*instagram*/
+#insta{
+    width: 1300px;
+    margin: 0 auto;
+    text-align: center;
+}
+#insta ul{
+    display: flex;
+    justify-content: space-between;
+}
+#insta ul li{
+    padding-bottom: 15px;
+    position: relative;
+}
+#insta .btn_insta{
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0,0,0,0.3);
+    opacity: 0;
+}
+#insta ul .btn_insta:hover{
+    opacity: 100%;
+    transition: all 0.5s;
+}
+
+/*footer*/
+#footer{
+    border-top: 1px solid #000;
+    margin-top: 150px;
+}
+#footer_inner{
+    width: 1300px;
+    margin: 0 auto;
+    padding-top: 50px;
+}
+.ft_left{
+    float: left;
+}
+#footer_inner ul{
+    float: left;
+    padding-top: 10px;
+}
+#footer_inner ul li{
+    padding-right: 50px;
+}
+#footer_inner p{
+    padding-bottom: 15px;
+}
+.ft_right{
+    float: right;
+    padding-top: 85px;
+}
+.ft_right h2{
+    padding: 15px 0;
+}
