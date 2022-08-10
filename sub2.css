@@ -169,6 +169,7 @@ img, video{
 #footer{
     border-top: 1px solid #000;
     margin-top: 150px;
+    font-size: 15px;
 }
 #footer_inner{
     width: 1300px;
