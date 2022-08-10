@@ -123,6 +123,9 @@ div#header.on .login2{
 div#header.on .login3{
     background-image: url(img/black_3.png);
 }
+div#header.on ul li a:hover{
+    font-weight: bold;
+}
 
 /*counter*/
 #counter{
